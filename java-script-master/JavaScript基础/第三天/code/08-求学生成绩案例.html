@@ -17,7 +17,8 @@
         var average = 0; // 求平均值的变量
         for (var i = 1; i <= num; i++) {
             var score = prompt('请您输入第' + i + '个学生成绩');
-            // 因为从prompt取过来的数据是 字符串型的需要转换为数字型
+            // sum=sum+score;  这个结果就变成了字符串拼接了
+            // 因为从prompt取过来的数据是 parseFloat字符串型的需要转换为数字型
             sum = sum + parseFloat(score);
         }
         average = sum / num;

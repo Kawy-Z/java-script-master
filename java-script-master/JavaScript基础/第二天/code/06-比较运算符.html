@@ -9,14 +9,21 @@
     <script>
         console.log(3 >= 5); // false
         console.log(2 <= 4); // true
-        //1. 我们程序里面的等于符号 是 ==  默认转换数据类型 会把字符串型的数据转换为数字型 只要求值相等就可以
+        
         console.log(3 == 5); // false
         console.log('pink老师' == '刘德华'); // flase
         console.log(18 == 18); // true
+        //1. 我们程序里面的等于符号 是 ==  默认转换数据类型 会把字符串型的数据转换为数字型 只要求值相等就可以
         console.log(18 == '18'); // true
         console.log(18 != 18); // false
         // 2. 我们程序里面有全等 一模一样  要求 两侧的值 还有 数据类型完全一致才可以 true
         console.log(18 === 18);
+        console.log(18 === '18'); // false
+
+        // =     赋值  把右边给左边
+        // ==    判断  判断两边值是否相等(有隐式转换)
+        console.log(18 == '18'); // true
+        // ===   全等  判断两边的值和数据类型是否完全相同
         console.log(18 === '18'); // false
     </script>
 </head>

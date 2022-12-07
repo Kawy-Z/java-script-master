@@ -8,6 +8,7 @@
     <title>Document</title>
     <script>
         // 1. 求1-100之间所有数的平均值   需要一个 sum 和的变量 还需要一个平均值 average 变量
+        // 先初始化一下
         var sum = 0;
         var average = 0;
         for (var i = 1; i <= 100; i++) {
@@ -22,7 +23,8 @@
         for (var i = 1; i <= 100; i++) {
             if (i % 2 == 0) {
                 even = even + i;
-            } else {
+            } 
+            else {
                 odd = odd + i;
             }
         }
